@@ -22,7 +22,7 @@ fun main(){
         }
     }
 
-    println("Computer choice "+computerChoice)
+    println("Computer choice $computerChoice")
 
     val  winner = when{
         playerChoice == computerChoice -> "Tie"
