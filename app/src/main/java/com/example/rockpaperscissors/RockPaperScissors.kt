@@ -22,13 +22,22 @@ fun main(){
         }
     }
 
+
+
+    while(playerChoice != "Rock" && playerChoice != "Paper" && playerChoice != "Scissors"){
+        println("This is wrong input $playerChoice")
+//        break
+        return
+    }
+    println("Player input $playerChoice")
+
     println("Computer choice $computerChoice")
 
     val  winner = when{
         playerChoice == computerChoice -> "Tie"
-        playerChoice == "Rock" && computerChoice =="Scissors" -> "Player"
-        playerChoice == "Paper" && computerChoice =="Rock" -> "Player"
-        playerChoice == "Scissors" && computerChoice =="Paper" -> "Player"
+        playerChoice == "Rock" && computerChoice == "Scissors" -> "Player"
+        playerChoice == "Paper" && computerChoice == "Rock" -> "Player"
+        playerChoice == "Scissors" && computerChoice == "Paper" -> "Player"
         else -> "Computer"
     }
 
